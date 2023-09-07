@@ -1,6 +1,6 @@
 # Python 30-Day Coding Challenge
 
-![Python 30-Day Coding Challenge days](https://drive.google.com/file/d/18Vfi26G8yHS-Nl6rPyxwa5uu2lYF27CI/view?usp=sharing)
+![Python 30-Day Coding Challenge days](https://github.com/Winter551/Python-30-Day-Challenge/blob/main/Challenge%20List.jpeg)
 
 ## Useful resources for coding
 
