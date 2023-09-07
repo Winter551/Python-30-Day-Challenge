@@ -1,4 +1,4 @@
-# program that calculates user age
+# program that calculates general user age, not including months
 
 current_year = 2023
 birth = int(input("what year were you born in? "))
