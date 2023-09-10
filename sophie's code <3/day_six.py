@@ -1,3 +1,5 @@
+# stats-related class average program
+# program discusses how a graph of a class' average test scores looks like
 
 count = 0
 total = 0
