@@ -1,10 +1,13 @@
-#Racecar simulator
+#Racing Simulator
+#Importing random and time libs
 import random
 import time
 
+#Defining the car list and top speed of each car, as well as the random racer that wins at the end
 car_list = {"Audi R8":205, "Nissan GTR":198, "McLaren P1":217, "Lamborghini Hurican Performante":201, "Chevrolet Corvette C8":194}
 random_racers = ["Walace Winnin", "Sofi 'Sop' Lin", "Rafael Racist", "Carson Cars", "Martin Motorist", "Sam 'Sam' Harrold"]
 
+#Intro text
 print()
 print()
 print("Welcome new driver to the [2023 VIRTUAL PYTHON CUP (VPC)]")
@@ -15,17 +18,17 @@ print("You have A FEW CARS TO PICK FROM, each one with a different engine and th
 time.sleep(3)
 print()
 print(f"The CARS YOU CAN PICK FROM are:")
+#Goes through each car key:value pair in car_list and lists its name and top speed
 for car, speed in car_list.items():
     print(f"[ {car}, with a top speed of {speed} MPH ]")
     time.sleep(0.5)
 
 print()
 
+#Ask user what car they want as well as checking if it exists in the car list
 for car, speed in car_list.items():
-
     user_select_car = input("WHICH CAR would you like to pick?: ")
     print()
-
     if user_select_car not in car_list:
         print("This is NOT A VALID CAR, please TRY AGAIN")
         print()
@@ -33,6 +36,7 @@ for car, speed in car_list.items():
         user_car = user_select_car
         break
 
+#User's car's max speed
 user_speed = car_list[user_car]
 
 time.sleep(1)
@@ -42,7 +46,9 @@ print("LET THE RACE BEGIN!")
 time.sleep(2)
 print()
 
-
+#THIS GOES FOR ALL LEGS:
+#First asks user what speed they want for that leg of the race, then generates 2 random speeds that the user will fail at or under
+#Then checks if the user won, lost, or failed that leg of the race and if failed they auto-lose the race
 leg1 = int(input((f"CHOOSE YOUR SPEED for the [1ST] leg of the race [0 - {user_speed} MPH]: ")))
 time.sleep(2)
 
@@ -163,6 +169,7 @@ if lost == True:
 else:
     print()
 
+#Prints out the winner of each leg of the race
 random_winner = random.randint(0, 5)
 time.sleep(1)
 print("The race has CONCLUDED!")
@@ -190,6 +197,7 @@ else:
     time.sleep(2)
     print()
 
+#Checks if user won atleast 2 legs of the race, and if they did they win the cup
 print("So the overall winner of the [2023 VIRTUAL PYTHON CUP (VPC)] is...")
 time.sleep(2)
 print("...")
