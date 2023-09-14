@@ -19,7 +19,7 @@ num = int(input("what number would you like to work with? " ))
 base_exp = int(input("what base / exponent would you like to use? ex: 10. ")) 
 
 def exponential_to_log(num, base_exp): 
-    print("as an example, we will use 10^2 = 100. \n when converting this to log, 10 (a) becomes the base, 100 (c) becomes the number we are taking the log of, and 2 (b) ends up being the answer. ")
+    print("as an example, we will use 10^2 = 100. \nwhen converting this to log, 10 (a) becomes the base, 100 (c) becomes the number we are taking the log of, and 2 (b) ends up being the answer. ")
     time.sleep(3)
     print("let's try this conversion once! ")
 
@@ -31,12 +31,12 @@ if func.lower() == "exponents" or "exponent":
     print(f"{num} to the power of {base_exp} is {ans}. this means {num} was multipled by itself {base_exp} times. ")
 
     time.sleep(3)
-    print("in order to convert an exponential expression to log, understand this: \n EXPONENTIAL FORM: a^b = c \n ex: 10^2 = 100. LOG FORM: log subscript a (this is the base!) of c = b. this will make more sense once we convert the expressions! ")
-    time.sleep(3)
+    print("in order to convert an exponential expression to log, understand this: \nEXPONENTIAL FORM: a^b = c \nex: 10^2 = 100. \nLOG FORM: log subscript a (this is the base!) of c = b. this will make more sense once we convert the expressions! ")
+    time.sleep(5)
     exponential_to_log(num, base_exp)
 
 def log_to_exponential(num, base_exp): 
-    print("as an example, we will use log subscript 10 (meaning base 10) of 100. \n what does this equal? in order to make it easier, let's convert it to exponential form. ")
+    print("as an example, we will use log subscript 10 (meaning base 10) of 100. \nwhat does this equal? in order to make it easier, let's convert it to exponential form. ")
     time.sleep(3)
     print("we'll try this conversion! ")
 
@@ -46,5 +46,7 @@ def log_to_exponential(num, base_exp):
 if func.lower() == "log" or "find log" or "use log":
     ans = math.log(num, base_exp)
     print(f"the log base {base_exp} of {num} is {ans}! ")
-    time.sleep(3)
+    time.sleep(5)
     log_to_exponential(num, base_exp)
+
+print("thank you for learning w me today :) hope u learned something new! ")
