@@ -23,4 +23,5 @@ for i in range(1, 5):
         sec_guess = input("make a guess for the second letter of your word! ")
 
     if i == 5: 
+        print("sorry, you have run out of guesses. come play agian next time! ")
         break
