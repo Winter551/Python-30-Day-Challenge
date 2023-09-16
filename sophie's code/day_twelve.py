@@ -9,9 +9,9 @@ else:
 
 inst = input("what instrument do you play? ")
 print(f"omg i used to play the {inst} when i was younger, too! ")
-exp = input("how many years of work experience do you have? ")
+exp = int(input("how many years of work experience do you have? "))
 
-if exp > 3: 
+if exp >= 3: 
     print("you are hired !! practice starts next sunday! ")
 else: 
     print("i'm sorry, someone else has taken your spot. please check back with us for other potential jobs! ")
